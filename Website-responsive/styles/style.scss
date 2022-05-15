@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Rajdhani', sans-serif;
+    background-color: #2c3e50;
+}
+
+
+/*  START HEAD */
+nav{
+background: #0082e6;
+width: 100%;
+height: 80px;
+position: fixed;
+}
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    border-radius: 4px;
+    padding: 7px 13px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+a:hover{
+    background: #1b9bff;
+    transform: .7s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width: 925px){
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .7s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    a:hover {
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked  ~ ul {
+        left: 0;
+    }
+}
+
+/* END HEAD (WITHOUT RESPONIVE)   */
+
+/* START FRONT TEXT */
+
+label.text {
+    color: #0082e6;
+    font-size: 45px;
+    padding-left: 70px;
+    padding-top: 210px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+@media (max-width: 925px){
+    label.text{
+        font-size: 35px;
+        padding-left: 50px;
+    }
+}
+@media (max-width: 971px){
+    label.text {
+        font-size: 35px;
+    }
+}
+@media (max-width: 430px){
+    label.text {
+        font-size: 32px;
+        padding-top: 145px;
+    }
+}
+/* END FRONT TEXT */
+
+
+
+/*    START A SIGN IN LINK    */
+div.link {
+    margin-left: 150px;
+    margin-top: 100px;
+    display: block;
+
+}
+
+a.sign-in{
+    text-decoration: none;
+    background-color: #0082e6;
+    color: white;
+    padding: 7px 13px;
+    border-radius: 4px;
+    font-size: 29px;
+    text-transform: uppercase;
+}
+.sign-in:hover {
+    color: #1b9bff;
+    transition: .7s;
+}
+
+@media (max-width: 925px){
+        div.link {
+            font-size: 16px;
+        }
+}
+@media (max-width: 565px){
+    div.link{
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 465px){
+    div.link{
+        margin-top: 360px;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+/*    END A SIGN IN LINK    */
+
+
+
+/*    START THE IMG     */
+div.img {
+    float: right;
+    margin-right: 30px;
+    margin-top: 130px;
+    display: inline;
+}
+img {
+    max-width: 350px;
+}
+
+@media (max-width: 1043px){
+    div.img {
+        max-width: 250px;
+    }
+}
+@media (max-width: 971px){
+    div.img {
+        max-width: 250px;
+    }
+}
+@media (max-width: 925px){
+    img {
+        max-width: 250px;
+        
+    }
+    
+}
+@media (max-width: 810px){
+    div.img {
+        max-width: 250px;
+        margin-top: 160px;
+    }
+}
+
+@media (max-width: 777px){
+    div.img {
+        margin-top: 25px;
+        
+    }
+}
+
+@media (max-width: 430px){
+    div.img {
+        margin-top: 55px;
+        margin-right: 75px;
+        
+    }
+}
+@media (max-width: 326px){
+    div.img {
+        max-width: 200px;
+    }
+    label.text {
+        margin-top: 15px
+    }
+}
+/*     END THE IMG     */
